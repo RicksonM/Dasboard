@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
+
 <head>
     <title>Login V15</title>
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
@@ -103,44 +103,4 @@
 </body>
 </html>
 
-=======
-    <html>
-        <head>
-            <title>
-            </title>
-           
-            <!-- fontes -->
-                <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
-                <style>
-                        h1{
-                            font-family: 'Indie Flower', cursive;
-                            margin-left: 50%;
-                            align: center;
-                        }
-                        div{
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                        }
-                </style>
-        </head>
-        <body>
-        <h1>LOGIN</h1><br>
-            <div>
-               
-            <!--Form mandando informações para a pagina de inserção de dados -->
-            
-            <form action="log.php" method="post">
-                <label>Nome:</label><br>
-                <input type="text" name="login" placeholder="Zezinho Doideira"><br>
-                <label>Senha:</label><br>
-                <input type="password" name="senha" placeholder="123456"><br><br>
-                <a href="cadastro.php">Criar conta</a><br><br>
-                <input type="submit">
-                <a href="rsenha.php">Esqueci Minha Senha</a>
-            </form>
-            </div>
-            
-        </body>
-    </html>
->>>>>>> 23cc6f61976f83d60c971ce53064bd50ffc30f15
+
