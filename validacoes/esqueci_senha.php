@@ -4,9 +4,10 @@ require 'conecta.php';
 //Pegando dados do esqueci minha senha
 $login = $_POST['login'];
 $newsenha = $_POST['new_senha'];
+$cripto = md5($newsenha);
 
 //Alterando senha do usuario na base
-$sql = "UPDATE user SET senha = '$newsenha' WHERE nome = '$login'";
+$sql = "UPDATE user SET senha = '$cripto' WHERE nome = '$login'";
 
 $comando = mysqli_query($conn, $sql);
 
