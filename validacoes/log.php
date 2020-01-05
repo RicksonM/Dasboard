@@ -1,3 +1,10 @@
+<html>
+    <script>
+        function alerta(){
+            alert("Login ou senha inválidos, Tente novamente!")
+        }
+    </script>
+
 <?php
 require 'conecta.php';
 
@@ -20,14 +27,17 @@ $cripto = md5($senha);
     $teste = mysqli_fetch_assoc($sql);
 
     
-
+   //VALIDANDO O LOGIN, SE TUDO CERTO VAI PARA DASHBOARD SE NÃO, MENSAGEM DE ERRO E INDEX
     if($teste != null){
         $_SESSION["nome_user"] = $teste["nome"];
-        header("Location: teste.php");
+        header("Location: dashboard.php");
 
-        //echo "Funciona <h1>$login é o cara</h1> LOGIN OK";
     }else{
-        echo "ihh bixo, deu ruim dnv LOGIN INVALIDO";
+        echo ("<SCRIPT LANGUAGE='JavaScript'>
+        window.alert('Ocorreu um erro. A premissa não foi incluída')
+        window.location.href='../index.php';
+            </SCRIPT>");
+            
     }
 
 exit;
@@ -39,3 +49,5 @@ exit;
 <?php
 
 ?>
+
+</html>
